@@ -1,0 +1,12 @@
+button {
+  font-size: 0;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  background-color: unset;
+  border: none;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

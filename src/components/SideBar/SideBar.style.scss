@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 234px;
+  height: 100vh;
+  background-color: $grayishBlack;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+}

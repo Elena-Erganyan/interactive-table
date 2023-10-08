@@ -1,0 +1,14 @@
+.table {
+  // flex-grow: 1;
+  border-spacing: 24px;
+  padding: 0 9px;
+  border-radius: 6px;
+
+  &__add-row {
+    cursor: pointer;
+  }
+
+  &__delete-row {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  height: 44px;
+  background-color: $grayishBlack;
+  border: 1px solid $darkGray;
+
+  gap: 20px
+}

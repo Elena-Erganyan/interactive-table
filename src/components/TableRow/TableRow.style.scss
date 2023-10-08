@@ -1,0 +1,26 @@
+@import '../../variables';
+
+.table__data--level {
+  display: flex;
+  min-width: 120px;
+
+  .table__delete-row {
+    display: none;
+  }
+
+  &:hover {
+    .table__buttons {
+      background-color: $darkGray;
+    }
+
+    .table__delete-row {
+      display: block;
+    }
+  }
+}
+
+.table__buttons {
+  display: flex;
+  padding: 3px;
+  border-radius: 6px;
+}
