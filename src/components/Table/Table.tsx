@@ -95,7 +95,7 @@ export function Table ({tableData}: TableProps) {
                         <input
                           type={typeof rowData![prop as keyof typeof rowData]}
                           name={prop}
-                          value={rowData![prop as keyof typeof rowData]}
+                          value={rowData[prop as keyof typeof rowData] as string | number}
                           onChange={(evt) => handleRowChange(evt, prop)}
                           onKeyDown={(evt) => handleAdd(evt, null)}
                           required
