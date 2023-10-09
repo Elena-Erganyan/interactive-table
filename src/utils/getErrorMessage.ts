@@ -13,5 +13,5 @@ export function getErrorMessage (error: FetchBaseQueryError | SerializedError | 
     return `${error.status}: ${error.error}`;
   }
   
-  return 'An error occured';
+  return `An error occured: ${error.status}`;
 }

@@ -4,16 +4,50 @@
   display: flex;
   flex-direction: column;
   width: 234px;
-  height: 100vh;
+  height: calc(100vh - 44px); // substracting the header height
   background-color: $grayishBlack;
+  border-right: 1px solid $darkGray;
 
   &__header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 7px 8px 20px;
+    border-bottom: 1px solid $darkGray;
+    color: $gray;
+  }
+
+  &__header-text {
+    display: flex;
     flex-direction: column;
+
+    span:last-child {
+      font-size: 10px;
+    }
+  }
+
+  &__header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 
   &__nav {
     display: flex;
     flex-direction: column;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 5px 20px;
+      cursor: pointer;
+
+      &--active {
+        background-color: $gray;
+        cursor: unset;
+      }
+    }
   }
 }

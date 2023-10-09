@@ -3,10 +3,32 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 20px 10px;
+  padding: 10px 20px;
   height: 44px;
   background-color: $grayishBlack;
-  border: 1px solid $darkGray;
+  border-bottom: 1px solid $darkGray;
 
-  gap: 20px
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 28px;
+    color: $gray;
+    cursor: pointer;
+
+    &--active {
+      padding: 13px 4px;
+      border-bottom: 2px solid $white;
+      color: $white;
+      cursor: unset;
+    }
+
+    &--squeres {
+      margin-right: 20px;
+    }
+
+    &--arrow {
+      margin-right: 31px;
+    }
+  }
 }

@@ -5,26 +5,18 @@ export const tableData = {
     'Оборудование', 'Накладные расходы', 'Сметная прибыль',
   ],
   properties: ['rowName', 'salary', 'equipmentCosts', 'overheads', 'estimatedProfit'],
-  props: {
-    rowName: {
-      display: 'Наименование работ',
-      type: 'string',
-    },
-    salary: {
-      display: 'Основная з/п',
-      type: 'number',
-    },
-    equipmentCosts: {
-      display: 'Оборудование',
-      type: 'number',
-    },
-    overheads: {
-      display: 'Накладные расходы',
-      type: 'number',
-    },
-    estimatedProfit: {
-      display: 'Сметная прибыль',
-      type: 'number',
-    },
-  }
+};
+
+export const emptyRow = {
+  rowName: '',
+  total: 0,
+  salary: 0, 
+  mimExploitation: 0,
+  machineOperatorSalary: 0,
+  materials: 0,
+  mainCosts: 0,
+  supportCosts: 0,
+  equipmentCosts: 0,
+  overheads: 0,
+  estimatedProfit: 0,
 };
